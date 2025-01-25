@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+@import "tailwindcss";
+
+@source "./index.html";
+@custom-variant dark (&:where(.dark, .dark *));
