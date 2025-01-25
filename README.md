@@ -8,9 +8,15 @@
 
 [Select2](https://github.com/select2/select2) v4 theme for [TailwindCSS v4](https://tailwindcss.com/), inspired by [select2-bootstrap4-theme](https://github.com/ttskch/select2-bootstrap4-theme)
 
-## Live demo
+## Live demo v4
 
 https://erimicel.github.io/select2-tailwindcss-v4-theme/
+
+## Repo and live demo for tailwindcss v3 theme
+
+Demo: https://erimicel.github.io/select2-tailwindcss-v3-theme/
+
+Repo: https://github.com/erimicel/select2-tailwindcss-v3-theme
 
 ## 📦 Installation
 
