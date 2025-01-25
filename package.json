@@ -1,7 +1,7 @@
 {
-  "name": "select2-tailwindcss-v-4theme",
+  "name": "select2-tailwindcss-v4-theme",
   "version": "4.0.0",
-  "description": "A Select2 theme for Tailwindcss",
+  "description": "A Select2 theme for Tailwindcss v4",
   "main": "dist/select2-tailwindcss-v4-theme.css",
   "scripts": {
     "build": "cp src/select2-tailwindcss-theme.css dist/select2-tailwindcss-theme.css",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erimicel/select2-tailwindcss-theme.git"
+    "url": "git+https://github.com/erimicel/select2-tailwindcss-v4-theme.git"
   },
   "files": [
     "dist/",
@@ -35,9 +35,9 @@
   "author": "Erim Icel <erimicel@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erimicel/select2-tailwindcss-theme/issues"
+    "url": "https://github.com/erimicel/select2-tailwindcss-v4-theme/issues"
   },
-  "homepage": "https://github.com/erimicel/select2-tailwindcss-theme#readme",
+  "homepage": "https://github.com/erimicel/select2-tailwindcss-v4-theme#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.0.0",
     "tailwindcss": "^4.0.0"
