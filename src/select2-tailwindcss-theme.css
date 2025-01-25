@@ -1,5 +1,7 @@
 @reference "tailwindcss/theme";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* Base container */
 .select2-container--tailwindcss-4 {
   @apply block;
