@@ -1,4 +1,4 @@
-# select2-tailwindcss-theme
+# select2-tailwindcss-v4-theme
 
 [![GitHub](https://img.shields.io/github/v/release/erimicel/select2-tailwindcss-v4-theme?style=flat-square)](https://github.com/erimicel/select2-tailwindcss-v4-theme)
 [![npm version](https://img.shields.io/npm/v/select2-tailwindcss-v4-theme?style=flat-square)](https://www.npmjs.com/package/select2-tailwindcss-v4-theme)
