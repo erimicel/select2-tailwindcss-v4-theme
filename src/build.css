@@ -1,0 +1,5 @@
+@reference "tailwindcss/theme";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@import "./select2-tailwindcss-theme.css";

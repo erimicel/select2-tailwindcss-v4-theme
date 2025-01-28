@@ -2,3 +2,5 @@
 
 @source "./index.html";
 @custom-variant dark (&:where(.dark, .dark *));
+
+@import "../dist/select2-tailwindcss-theme.css";
