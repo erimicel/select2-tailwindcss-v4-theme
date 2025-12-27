@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/erimicel/select2-tailwindcss-v4-theme#readme",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.0.0",
-    "tailwindcss": "^4.0.0"
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
   }
 }

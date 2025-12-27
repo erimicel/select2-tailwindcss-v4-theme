@@ -106,7 +106,7 @@ select:invalid ~ .select2-container--tailwindcss-4 .select2-selection__placehold
 
 /* Single Selection */
 .select2-container--tailwindcss-4 .select2-selection--single {
-  @apply relative w-full h-auto min-h-[2.25rem] py-1.5 pl-3 pr-8 text-left text-base sm:text-sm/6 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded-md cursor-pointer dark:bg-white/5 dark:text-white dark:border-white/10;
+  @apply relative w-full h-auto min-h-9 py-1.5 pl-3 pr-8 text-left text-base sm:text-sm/6 transition-colors duration-200 ease-in-out bg-white border border-gray-300 rounded-md cursor-pointer dark:bg-white/5 dark:text-white dark:border-white/10;
 }
 
 /* Rendered text */
@@ -141,7 +141,7 @@ select:invalid ~ .select2-container--tailwindcss-4 .select2-selection__placehold
 
 /* Clear button */
 .select2-container--tailwindcss-4 .select2-selection--single .select2-selection__clear {
-  @apply font-bold absolute inset-y-0 right-0 flex items-center pr-[2rem] text-base sm:text-sm/6 text-gray-400 cursor-pointer hover:text-gray-700;
+  @apply font-bold absolute inset-y-0 right-0 flex items-center pr-8 text-base sm:text-sm/6 text-gray-400 cursor-pointer hover:text-gray-700;
 }
 
 /* Focus styles for keyboard navigation */
@@ -156,7 +156,7 @@ select:invalid ~ .select2-container--tailwindcss-4 .select2-selection__placehold
 
 /* Multiple selection */
 .select2-container--tailwindcss-4 .select2-selection--multiple {
-  @apply min-h-[2.25rem] h-auto rounded-md text-base sm:text-sm/6 bg-white py-1.5 px-3 border border-gray-300 cursor-default dark:bg-white/5 dark:text-white dark:border-white/10;
+  @apply min-h-9 h-auto rounded-md text-base sm:text-sm/6 bg-white py-1.5 px-3 border border-gray-300 cursor-default dark:bg-white/5 dark:text-white dark:border-white/10;
 }
 
 /* Multiple selection list */
@@ -180,7 +180,7 @@ select:invalid ~ .select2-container--tailwindcss-4 .select2-selection__placehold
 }
 
 .select2-container--tailwindcss-4 .select2-selection--multiple .select2-search--inline .select2-search__field {
-  @apply h-[1.5rem] p-0 m-0 text-base sm:text-sm/6 bg-transparent border-0 focus:outline-hidden focus:ring-0 dark:placeholder:text-gray-500 placeholder:text-gray-400;
+  @apply h-6 p-0 m-0 text-base sm:text-sm/6 bg-transparent border-0 focus:outline-hidden focus:ring-0 dark:placeholder:text-gray-500 placeholder:text-gray-400;
 }
 
 /* Disabled state */
