@@ -1,13 +1,13 @@
 {
   "name": "select2-tailwindcss-v4-theme",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Select2 theme for Tailwindcss v4",
   "main": "dist/select2-tailwindcss-v4-theme.css",
   "scripts": {
     "build": "cp src/select2-tailwindcss-theme.css dist/select2-tailwindcss-theme.css",
-    "build:min": "MINIFY=true npx @tailwindcss/cli -i src/build.css -o dist/select2-tailwindcss-theme.min.css --minify",
-    "build:plain": "VERBOSE=true npx @tailwindcss/cli -i src/build.css -o dist/select2-tailwindcss-theme-plain.css --verbose",
-    "build:plain:min": "MINIFY=true VERBOSE=true npx @tailwindcss/cli -i src/build.css -o dist/select2-tailwindcss-theme-plain.min.css --verbose --minify",
+    "build:min": "npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme.min.css",
+    "build:plain": "npx @tailwindcss/cli -i src/build.css -o dist/select2-tailwindcss-theme-plain.css --verbose",
+    "build:plain:min": "npx @tailwindcss/cli -i src/build.css -o dist/select2-tailwindcss-theme-plain.min.css --verbose --minify",
     "build:demo": "npx @tailwindcss/cli -i ./docs/tailwind.css -o ./docs/css/tailwind.css --minify",
     "build:all": "npm run build && npm run build:min && npm run build:plain && npm run build:plain:min && npm run build:demo"
   },
@@ -40,6 +40,9 @@
   "homepage": "https://github.com/erimicel/select2-tailwindcss-v4-theme#readme",
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.18",
+    "cssnano": "^7.1.2",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
     "tailwindcss": "^4.1.18"
   }
 }
