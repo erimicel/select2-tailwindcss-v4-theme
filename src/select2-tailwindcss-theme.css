@@ -192,6 +192,12 @@ select:invalid ~ .select2-container--tailwindcss-4 .select2-selection__placehold
   @apply ring-0 border-gray-200 dark:border-white/5;
 }
 
+/* Hide clear button when disabled */
+.select2-container--tailwindcss-4.select2-container--disabled .select2-selection--multiple .select2-selection__choice__remove,
+.select2-container--tailwindcss-4.select2-container--disabled .select2-selection--single .select2-selection__clear {
+  @apply hidden;
+}
+
 /* Clearable state */
 .select2-container--tailwindcss-4 .select2-selection--multiple.select2-selection--clearable {
   @apply pr-4;
