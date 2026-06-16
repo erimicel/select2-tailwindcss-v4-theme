@@ -5,7 +5,7 @@
 
 /* Dropdown */
 .select2-container--tailwindcss-4.select2-container--open .select2-dropdown {
-  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg ring-1 ring-black/5 focus:outline-hidden sm:text-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-indigo-600 dark:focus:border-indigo-600;
+  @apply w-full py-1 mt-1 overflow-auto text-base bg-white border-none rounded-md shadow-lg ring-1 ring-black/5 focus:outline-hidden sm:text-sm dark:bg-gray-700 dark:text-white;
 }
 
 /* Dropdown position */
@@ -19,7 +19,7 @@
 
 /* Search box */
 .select2-container--tailwindcss-4 .select2-search--dropdown .select2-search__field {
-  @apply block w-full px-3 py-1.5 text-base sm:text-sm/6 placeholder-gray-400 border-gray-300 border rounded-md shadow-xs focus:border-indigo-600 focus:outline-hidden focus:ring-1 focus:ring-indigo-600 dark:bg-gray-700;
+  @apply block w-full px-3 py-1.5 text-base sm:text-sm/6 placeholder-gray-400 border-gray-300 border rounded-md shadow-xs focus:border-indigo-600 focus:outline-hidden focus:ring-1 focus:ring-indigo-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:border-gray-600;
 }
 
 /* Results container */
@@ -171,7 +171,7 @@ select:invalid ~ .select2-container--tailwindcss-4 .select2-selection__placehold
 
 /* Remove button */
 .select2-container--tailwindcss-4 .select2-selection--multiple .select2-selection__choice__remove {
-  @apply -ml-1 mr-1.5 h-4 w-4 pb-[0.10rem] items-center flex justify-center rounded-full text-indigo-600 hover:bg-blue-200 hover:text-indigo-900;
+  @apply -ml-1 mr-1.5 h-4 w-4 pb-[0.10rem] items-center flex justify-center rounded-full text-indigo-600 hover:bg-indigo-200 hover:text-indigo-900;
 }
 
 /* Search field in multiple selection */

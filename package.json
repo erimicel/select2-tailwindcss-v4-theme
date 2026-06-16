@@ -2,14 +2,16 @@
   "name": "select2-tailwindcss-v4-theme",
   "version": "1.2.2",
   "description": "A Select2 theme for Tailwindcss v4",
-  "main": "dist/select2-tailwindcss-v4-theme.css",
+  "main": "dist/select2-tailwindcss-theme-plain.min.css",
+  "style": "dist/select2-tailwindcss-theme-plain.min.css",
   "scripts": {
     "build": "cp src/select2-tailwindcss-theme.css dist/select2-tailwindcss-theme.css",
     "build:min": "npx postcss dist/select2-tailwindcss-theme.css -o dist/select2-tailwindcss-theme.min.css",
     "build:plain": "npx @tailwindcss/cli -i src/build.css -o dist/select2-tailwindcss-theme-plain.css --verbose",
     "build:plain:min": "npx @tailwindcss/cli -i src/build.css -o dist/select2-tailwindcss-theme-plain.min.css --verbose --minify",
     "build:demo": "npx @tailwindcss/cli -i ./docs/tailwind.css -o ./docs/css/tailwind.css --minify",
-    "build:all": "npm run build && npm run build:min && npm run build:plain && npm run build:plain:min && npm run build:demo"
+    "build:all": "npm run build && npm run build:min && npm run build:plain && npm run build:plain:min && npm run build:demo",
+    "prepublishOnly": "npm run build:all"
   },
   "repository": {
     "type": "git",
@@ -28,9 +30,7 @@
     "tailwind",
     "tailwindcss",
     "tailwindcss-v4",
-    "css",
-    "scss",
-    "sass"
+    "css"
   ],
   "author": "Erim Icel <erimicel@gmail.com>",
   "license": "MIT",

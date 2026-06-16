@@ -48,17 +48,27 @@ $ yarn add select2-tailwindcss-v4-theme
 
 ## Usage
 
+Pick the file that matches your setup:
+
+**If your project does NOT compile Tailwind** (plain HTML, no build step) — use the precompiled `-plain` files, which are ready-to-use CSS:
+
 ```js
-import "select2-tailwindcss-v4-theme/dist/select2-tailwindcss-theme.css"; // Regular version
+import "select2-tailwindcss-v4-theme/dist/select2-tailwindcss-theme-plain.css"; // Precompiled
 // OR
-import "select2-tailwindcss-v4-theme/dist/select2-tailwindcss-theme.min.css"; // Minified version
+import "select2-tailwindcss-v4-theme/dist/select2-tailwindcss-theme-plain.min.css"; // Precompiled, minified
 ```
+
+**If your project DOES compile Tailwind** — the non-plain files contain `@apply` directives and must be processed by Tailwind. Reference them via `@source` (see ["With tailwindcss config"](#with-tailwindcss-config) below) so the utilities are generated as part of your own build.
+
+Then initialise Select2 with the theme:
 
 ```js
 $("select").select2({
   theme: "tailwindcss-4",
 });
 ```
+
+<a id="with-tailwindcss-config"></a>
 
 ### With tailwindcss config
 
@@ -84,7 +94,7 @@ cd select2-tailwindcss-v4-theme
 npm install
 ```
 
-Modify the SCSS file in src/.scss. Build the CSS:
+Modify the CSS source in `src/select2-tailwindcss-theme.css`. Build the CSS:
 
 ```bash
 npm run build:all   # Build all files and update demo as-well

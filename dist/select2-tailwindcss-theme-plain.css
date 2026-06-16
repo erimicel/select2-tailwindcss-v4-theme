@@ -31,28 +31,10 @@
     line-height: var(--tw-leading, var(--text-sm--line-height, calc(1.25 / 0.875)));
   }
   &:where(.dark, .dark *) {
-    border-color: var(--color-gray-600, oklch(44.6% 0.03 256.802));
-  }
-  &:where(.dark, .dark *) {
     background-color: var(--color-gray-700, oklch(37.3% 0.034 259.733));
   }
   &:where(.dark, .dark *) {
     color: var(--color-white, #fff);
-  }
-  &:where(.dark, .dark *) {
-    &::placeholder {
-      color: var(--color-gray-400, oklch(70.7% 0.022 261.325));
-    }
-  }
-  &:where(.dark, .dark *) {
-    &:focus {
-      border-color: var(--color-indigo-600, oklch(51.1% 0.262 276.966));
-    }
-  }
-  &:where(.dark, .dark *) {
-    &:focus {
-      --tw-ring-color: var(--color-indigo-600, oklch(51.1% 0.262 276.966));
-    }
   }
 }
 .select2-container--tailwindcss-4.select2-container--open .select2-dropdown--below {
@@ -100,7 +82,18 @@
     line-height: calc(var(--spacing, 0.25rem) * 6);
   }
   &:where(.dark, .dark *) {
+    border-color: var(--color-gray-600, oklch(44.6% 0.03 256.802));
+  }
+  &:where(.dark, .dark *) {
     background-color: var(--color-gray-700, oklch(37.3% 0.034 259.733));
+  }
+  &:where(.dark, .dark *) {
+    color: var(--color-white, #fff);
+  }
+  &:where(.dark, .dark *) {
+    &::placeholder {
+      color: var(--color-gray-400, oklch(70.7% 0.022 261.325));
+    }
   }
 }
 .select2-container--tailwindcss-4 .select2-results__options {
@@ -453,7 +446,7 @@
   color: var(--color-indigo-600, oklch(51.1% 0.262 276.966));
   &:hover {
     @media (hover: hover) {
-      background-color: var(--color-blue-200, oklch(88.2% 0.059 254.128));
+      background-color: var(--color-indigo-200, oklch(87% 0.065 274.039));
     }
   }
   &:hover {
