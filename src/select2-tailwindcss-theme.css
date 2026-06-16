@@ -68,6 +68,11 @@
 }
 
 /* Input groups */
+/* Grow to fill the flex row so the control width stays stable instead of shrinking to the selected option */
+.input-group > .select2-container--tailwindcss-4 {
+  @apply flex-1 min-w-0;
+}
+
 .input-group > * + select + .select2-container--tailwindcss-4 .select2-selection {
   @apply rounded-l-none border-l-0;
 }
@@ -93,9 +98,9 @@ select.is-invalid ~ .select2-container--tailwindcss-4 .select2-selection,
 select:invalid ~ .select2-container--tailwindcss-4 .select2-selection {
   @apply border-red-500 text-red-900;
 }
-.field_with_errors .select2-container--tailwindcss-4 .select2-container--focus,
-select.is-invalid ~ .select2-container--tailwindcss-4 .select2-container--focus,
-select:invalid ~ .select2-container--tailwindcss-4 .select2-container--focus {
+.field_with_errors .select2-container--tailwindcss-4.select2-container--focus .select2-selection,
+select.is-invalid ~ .select2-container--tailwindcss-4.select2-container--focus .select2-selection,
+select:invalid ~ .select2-container--tailwindcss-4.select2-container--focus .select2-selection {
   @apply ring-red-500 border-red-500;
 }
 .field_with_errors .select2-container--tailwindcss-4 .select2-selection__placeholder,

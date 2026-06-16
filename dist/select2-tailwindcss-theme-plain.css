@@ -186,6 +186,10 @@
   padding-inline: 0;
   padding-block: 0;
 }
+.input-group > .select2-container--tailwindcss-4 {
+  min-width: 0;
+  flex: 1;
+}
 .input-group > * + select + .select2-container--tailwindcss-4 .select2-selection {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
@@ -220,7 +224,7 @@
   border-color: var(--color-red-500, oklch(63.7% 0.237 25.331));
   color: var(--color-red-900, oklch(39.6% 0.141 25.723));
 }
-.field_with_errors .select2-container--tailwindcss-4 .select2-container--focus, select.is-invalid ~ .select2-container--tailwindcss-4 .select2-container--focus, select:invalid ~ .select2-container--tailwindcss-4 .select2-container--focus {
+.field_with_errors .select2-container--tailwindcss-4.select2-container--focus .select2-selection, select.is-invalid ~ .select2-container--tailwindcss-4.select2-container--focus .select2-selection, select:invalid ~ .select2-container--tailwindcss-4.select2-container--focus .select2-selection {
   border-color: var(--color-red-500, oklch(63.7% 0.237 25.331));
   --tw-ring-color: var(--color-red-500, oklch(63.7% 0.237 25.331));
 }
